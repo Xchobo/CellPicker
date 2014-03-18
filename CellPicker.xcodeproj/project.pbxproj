@@ -21,6 +21,11 @@
 		40CDD9DE18D8314C00AB6806 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CDD9C018D8314C00AB6806 /* UIKit.framework */; };
 		40CDD9E618D8314C00AB6806 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40CDD9E418D8314C00AB6806 /* InfoPlist.strings */; };
 		40CDD9E818D8314C00AB6806 /* CellPickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CDD9E718D8314C00AB6806 /* CellPickerTests.m */; };
+		40CDD9F818D8318300AB6806 /* MagnifierView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CDD9F318D8318300AB6806 /* MagnifierView.m */; };
+		40CDD9F918D8318300AB6806 /* MyPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CDD9F518D8318300AB6806 /* MyPickerView.m */; };
+		40CDD9FA18D8318300AB6806 /* WheelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CDD9F718D8318300AB6806 /* WheelView.m */; };
+		40CDD9FD18D86D8900AB6806 /* downshadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 40CDD9FB18D86D8900AB6806 /* downshadow.png */; };
+		40CDD9FE18D86D8900AB6806 /* upshadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 40CDD9FC18D86D8900AB6806 /* upshadow.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,14 @@
 		40CDD9E318D8314C00AB6806 /* CellPickerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CellPickerTests-Info.plist"; sourceTree = "<group>"; };
 		40CDD9E518D8314C00AB6806 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		40CDD9E718D8314C00AB6806 /* CellPickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellPickerTests.m; sourceTree = "<group>"; };
+		40CDD9F218D8318300AB6806 /* MagnifierView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagnifierView.h; sourceTree = "<group>"; };
+		40CDD9F318D8318300AB6806 /* MagnifierView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagnifierView.m; sourceTree = "<group>"; };
+		40CDD9F418D8318300AB6806 /* MyPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPickerView.h; sourceTree = "<group>"; };
+		40CDD9F518D8318300AB6806 /* MyPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPickerView.m; sourceTree = "<group>"; };
+		40CDD9F618D8318300AB6806 /* WheelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WheelView.h; sourceTree = "<group>"; };
+		40CDD9F718D8318300AB6806 /* WheelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WheelView.m; sourceTree = "<group>"; };
+		40CDD9FB18D86D8900AB6806 /* downshadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downshadow.png; sourceTree = "<group>"; };
+		40CDD9FC18D86D8900AB6806 /* upshadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = upshadow.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +125,9 @@
 		40CDD9C218D8314C00AB6806 /* CellPicker */ = {
 			isa = PBXGroup;
 			children = (
+				40CDD9FB18D86D8900AB6806 /* downshadow.png */,
+				40CDD9FC18D86D8900AB6806 /* upshadow.png */,
+				40CDD9F118D8318300AB6806 /* PickerView */,
 				40CDD9CB18D8314C00AB6806 /* AppDelegate.h */,
 				40CDD9CC18D8314C00AB6806 /* AppDelegate.m */,
 				40CDD9CE18D8314C00AB6806 /* Main.storyboard */,
@@ -150,6 +166,19 @@
 				40CDD9E418D8314C00AB6806 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		40CDD9F118D8318300AB6806 /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				40CDD9F218D8318300AB6806 /* MagnifierView.h */,
+				40CDD9F318D8318300AB6806 /* MagnifierView.m */,
+				40CDD9F418D8318300AB6806 /* MyPickerView.h */,
+				40CDD9F518D8318300AB6806 /* MyPickerView.m */,
+				40CDD9F618D8318300AB6806 /* WheelView.h */,
+				40CDD9F718D8318300AB6806 /* WheelView.m */,
+			);
+			path = PickerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +260,8 @@
 				40CDD9D518D8314C00AB6806 /* Images.xcassets in Resources */,
 				40CDD9C718D8314C00AB6806 /* InfoPlist.strings in Resources */,
 				40CDD9D018D8314C00AB6806 /* Main.storyboard in Resources */,
+				40CDD9FE18D86D8900AB6806 /* upshadow.png in Resources */,
+				40CDD9FD18D86D8900AB6806 /* downshadow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,9 +280,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40CDD9FA18D8318300AB6806 /* WheelView.m in Sources */,
 				40CDD9D318D8314C00AB6806 /* ViewController.m in Sources */,
 				40CDD9CD18D8314C00AB6806 /* AppDelegate.m in Sources */,
 				40CDD9C918D8314C00AB6806 /* main.m in Sources */,
+				40CDD9F818D8318300AB6806 /* MagnifierView.m in Sources */,
+				40CDD9F918D8318300AB6806 /* MyPickerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +490,7 @@
 				40CDD9ED18D8314C00AB6806 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40CDD9EE18D8314C00AB6806 /* Build configuration list for PBXNativeTarget "CellPickerTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +499,7 @@
 				40CDD9F018D8314C00AB6806 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
